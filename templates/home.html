@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>เครปค่าเครป</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="overview">
+            <form action="/order" method="POST">
+                <h3>เลือกแป้งเครป</h3>
+                <div class="form-group">
+                    <input type="radio" name="batter" id="charcoal" value="charcoal">
+                    <label for="charcoal">แป้งชาร์โคล</label><br>
+                    <input type="radio" name="batter" id="normal" value="normal">
+                    <label for="normal">แป้งธรรมดา</label><br>
+                </div>
+                <h3>เลือกไส้เครป(ไส้เค็ม)</h3>
+                <div class="form-group">
+                    <input type="checkbox" name="salty" id="egg" value="egg">
+                    <label for="egg">ไข่ไก่</label><br>
+                    <input type="checkbox" name="salty" id="chili" value="chili">
+                    <label for="chili">พริกเผา</label><br>
+                    <input type="checkbox" name="salty" id="flossyPork" value="flossyPork">
+                    <label for="flossyPork">หมูหย็อง</label><br>
+                    <input type="checkbox" name="salty" id="ham" value="ham">
+                    <label for="ham">แฮม</label><br>
+                </div>
+                <h3>เลือกไส้เครป(ไส้หวาน)</h3>
+                <div class="form-group">
+                    <input type="checkbox" name="sweet" id="foiThong" value="foiThong">
+                    <label for="foiThong">ฝอยทอง</label><br>
+                    <input type="checkbox" name="sweet" id="custard" value="custard">
+                    <label for="custard">สังขยา</label><br>
+                    <input type="checkbox" name="sweet" id="choco" value="choco">
+                    <label for="choco">ช็อคโกแล็ต</label><br>
+                    <input type="checkbox" name="sweet" id="jelly" value="jelly">
+                    <label for="jelly">วุ้นมะพร้าว</label><br>
+                    <input type="checkbox" name="sweet" id="nutella" value="nutella">
+                    <label for="nutella">นูเทลล่า</label><br>
+                </div>
+                <h3>เลือกท็อปปิ้ง</h3>
+                <div class="form-group">
+                    <input type="checkbox" name="topping" id="banana" value="banana">
+                    <label for="banana">กล้วยหอม</label><br>
+                    <input type="checkbox" name="topping" id="cheese" value="cheese">
+                    <label for="cheese">ชีส</label><br>
+                    <input type="checkbox" name="topping" id="tuna" value="tuna">
+                    <label for="tuna">ทูน่า</label><br>
+                    <input type="checkbox" name="topping" id="crabStick" value="crabStick">
+                    <label for="crabStick">ปูอัด</label><br>                
+                </div>
+                <h3>เลือกซอส</h3>
+                <div class="form-group">
+                    <input type="checkbox" name="sauce" id="chocolate" value="chocolate">
+                    <label for="chocolate">ซอสช็อคโกแล็ต</label><br>
+                    <input type="checkbox" name="sauce" id="strawberry" value="strawberry">
+                    <label for="strawberry">ซอสตรอเบอร์รี่</label><br>
+                    <input type="checkbox" name="sauce" id="caramel" value="caramel">
+                    <label for="caramel">คาราเมล</label><br><br>   
+                    <input type="submit"/>           
+                </div>
+            </form>
+        </div>
+        <div><h3>{{charcoal}}</h3></div>
+        <div><h3>{{normal}}</h3></div>
+    </body>
+</html>
