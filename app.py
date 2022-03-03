@@ -19,4 +19,6 @@ def order():
         elif order["batter"] == "normal":
             x = render_template("home.html", normal = Crape(order, Normal))
     return x
-app.run(debug=True)
+
+if __name__ == '__main__':
+  app.run(debug=True)

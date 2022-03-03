@@ -8,88 +8,121 @@ class Crape:
         return price
         
     def __repr__(self):
-        statement = "ราคาเครป : {}"
+        statement = "Order : {}"
         return statement.format(self.price_crape())
 
-    
 def Charcoal(order):
     crape = order.crape
     price = 0
+    result = ""
     if crape["batter"] == "charcoal":
         if crape["salty"] == "egg":
             price += 10
+            result += ("egg + ")
         if  crape["salty"] == "chili":
             price += 10
+            result+=("chili + ")
         if  crape["salty"] == "flossyPork":
             price += 10
+            result+=("flossyPork + ")
         if  crape["salty"] == "ham":
-            price += 15
+            price += 20
+            result+=("ham + ")
 
         if crape["sweet"] == "foiThong":
-            price += 10
+            price += 15
+            result+=("foiThong + ")
         if crape["sweet"] == "custard":
             price += 10
+            result+=("custard + ")
         if crape["sweet"] == "choco":
             price += 10
+            result+=("choco + ")
         if crape["sweet"] == "jelly":
             price += 10
+            result+=("jelly + ")
         if crape["sweet"] == "nutella":
-            price += 10
+            price += 15
+            result+=("nutella + ")
             
         if crape["topping"] == "banana":
             price += 10
+            result+=("banana + ")
         if crape["topping"] == "cheese":
             price += 10
+            result+=("cheese + ")
         if crape["topping"] == "tuna":
             price += 25
+            result+=("tuna + ")
         if crape["topping"] == "crabStick":
             price += 20 
+            result+=("crabStick + ")
         
         if crape["sauce"] == "chocolate":
             price += 10
+            result+=("chocolate")
         if crape["sauce"] == "strawberry":
             price += 10
+            result+=("strawberry")
         if crape["sauce"] == "caramel":
-            price += 10
-        return price
+            price += 15
+            result+=("caramel")
+        return "แป้งชาร์โคล " + str(price) +" บาท", result
 
 def Normal(order):
     crape = order.crape
     price = 0
+    result = ""
     if crape["batter"] == "normal":
         if crape["salty"] == "egg":
             price += 5
+            result += ("egg + ")
         if  crape["salty"] == "chili":
             price += 5
+            result+=("chili + ")
         if  crape["salty"] == "flossyPork":
             price += 5
+            result+=("flossyPork + ")
         if  crape["salty"] == "ham":
-            price += 10
+            price += 15
+            result+=("ham + ")
 
         if crape["sweet"] == "foiThong":
             price += 10
+            result+=("foiThong + ")
         if crape["sweet"] == "custard":
             price += 10
+            result+=("custard + ")
         if crape["sweet"] == "choco":
             price += 10
+            result+=("choco + ")
         if crape["sweet"] == "jelly":
             price += 10
+            result+=("jelly + ")
         if crape["sweet"] == "nutella":
             price += 10
+            result+=("nutella + ")
             
         if crape["topping"] == "banana":
             price += 10
+            result+=("banana + ")
         if crape["topping"] == "cheese":
             price += 10
+            result+=("cheese + ")
         if crape["topping"] == "tuna":
             price += 25
+            result+=("tuna + ")
         if crape["topping"] == "crabStick":
             price += 20 
+            result+=("crabStick + ")
         
         if crape["sauce"] == "chocolate":
             price += 5
+            result+=("chocolate")
         if crape["sauce"] == "strawberry":
             price += 5
+            result+=("strawberry")
         if crape["sauce"] == "caramel":
             price += 10
-        return price
+            result+=("caramel")
+        return "แป้งธรรมดา " + str(price)+" บาท", result
